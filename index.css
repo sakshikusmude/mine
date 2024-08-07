@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  background-color: #121212; /* Black */
+  color: #d3d3d3; /* Light grey */
+}
+
+header {
+  position: relative;
+  background-image: url('01.jpg'); /* Add your background photo URL */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centering the content horizontally */
+  text-align: center;
+  
+  /* Darken the background image */
+  filter: brightness(0.7); /* Adjust brightness value as needed */
+}
+
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark opaque overlay */
+  z-index: -1;
+}
+
+header .content {
+  position: relative;
+  z-index: 2;
+}
+
+header nav {
+  margin-top: 7em;  
+  bottom: 10;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 1em;
+}
+
+header nav ul li a {
+  color: #d3d3d3; /* Light grey */
+  text-decoration: none;
+  transition: text-shadow 0.3s ease;
+}
+
+header nav ul li a:hover {
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.profile-photo {
+  border-radius: 50%;
+  border: 3px solid white;
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  left: -30%;
+  bottom: -75px;
+  transform: translateX(-50%);
+  background-image: url('Profile.jpg'); /* Add your profile picture URL */
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.profile-photo:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  transform: translateX(-50%) scale(1.1);
+}
+
+section {
+  padding: 2em;
+  background-color: #282828; /* Dark grey */
+  margin: 1em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  color: #d3d3d3; /* Light grey */
+  transition: text-shadow 0.3s ease;
+}
+
+h1:hover,
+h2:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+li:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+a {
+  color: #87ceeb; /* Sky blue */
+  text-decoration: none;
+  transition: text-shadow 0.3s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+}
+
+#technicalskills {
+  padding: 2em;
+  background-color: #282828; /* Dark grey */
+  margin: 1em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #d3d3d3; /* Light grey */
+}
+
+#technicalskills h2 {
+  text-align: center;
+}
+
+#technicalskills .skillset,
+#technicalskills .languages,
+#technicalskills .developer-tools,
+#technicalskills .libraries {
+  margin-bottom: 2em;
+}
+
+#technicalskills h3 {
+  color: #d3d3d3; /* Light grey */
+  transition: text-shadow 0.3s ease;
+}
+
+#technicalskills h3:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+#technicalskills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#technicalskills li {
+  margin-bottom: 0.5em;
+}
+
+#technicalskills li:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
